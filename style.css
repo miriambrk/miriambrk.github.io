@@ -5,23 +5,58 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   line-height: 150%;
   color: #333;
-  background: #efeee7;
+  background: #dcdcdc;
 }
+
+.container {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  }
+
+.container-fluid {
+  margin-right: 0px;
+  margin-left: 0px;
+  }
+
+
+
 header {
   background: #333;
 }
+
 h1 {
-  padding: 20px 0;
+  padding: 20px;
   margin: 0;
   margin-bottom: 20px;
   font-size: 28px;
-  color: #eee;
+  background: purple;
+  color: white;
+  left: 0%;
+  right: 0%;
   text-align: center;
 }
+
+
+
+
+h6 {
+  background: grey;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  padding-right:15px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  margin-top: 0;
+}
+
+
 h2 {
   font-size: 24px;
 }
@@ -33,29 +68,42 @@ a {
   width: 1024px;
   margin: 0 auto;
 }
-/* Selecting elements by ID */
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
+
+.gap-right {
+  margin-right: 20px;
 }
+
+.gap-below {
+  margin-bottom: 25px;
+}
+
 #figure {
   position: relative;
 }
 #bio-name {
   position: absolute;
-  top: 155px;
-  left: 25px;
+  top: 150px;
+  left: 30px;
 }
-#main-bio {
-  width: 65%;
+
+img {
+   padding:1px;
+   border:1px solid #021a40;
 }
-#contact-info {
-  width: 35%;
-  font-size: 16px;
+
+.hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #ccc;
+   margin: 1em 0;
+   padding: 0;
 }
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+
+#hr {
+  height: 10px;
+  background: purple;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
