@@ -1,75 +1,283 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <title>Miriam Berkowitz Bio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Miriam Berkowitz Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-
 <body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <img class="profile-image img-responsive pull-left" src="assets/images/miriam-pic.jpg" alt="Miriam Berkowitz" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Miriam Berkowitz</h1>
+                <h2 class="desc">Data Analytics Developer</h2>
+                <ul class="social list-inline">
+                    <li><a href="https://www.linkedin.com/in/MiriamBerkowitz" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/miriambrk" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                    <li><a href="mailto: miriambrk@gmail.com"><i class="fa fa-envelope"></i></a></li>
 
-  <main class="container">
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto: miriambrk@gmail.com"><i class="fa fa-paper-plane"></i> Contact Me</a>
+        </div><!--//container-->
+    </header><!--//header-->
 
-    <!-- Creates the Overall Grid -->
-    <div class="container-fluid">
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                          <p>I am a software developer with a passion for data and analysis. After working as a software engineer
+                          for 15 years, I spent several years as a lay leader in the non-profit world. Now I'm updating my programming
+                          and data skills in a six-month Data Analytics and Visualization Bootcamp at George Washington University, graduating in March 2018.
+                          </p>
+                          <p>
+                          I'm thoroughly enjoying getting back to my roots -- coding with a focus on data, databases, and analysis. Each new discovery is exhilarating.
+                          Now I’d like to leverage my technical and leadership
+                          skills to develop data analytics applications and visualizations to guide business operations and decision-making.
+                          Ultimately I'd like to attain a leadership role in the data analytics industry.
+                          </p>
+                          <p>I also enjoy genealogy, reading, and collecting art.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://miriambrk.github.io/webhw/index.html" target="_blank">Weather Analysis Dashboard</a></h3>
+                                <p class="summary">A responsive weather analysis dashboard</p>
+                                <div class="featured-image">
+                                    <a href="https://miriambrk.github.io/webhw/index.html" target="_blank">
+                                      <img class="img-responsive project-image thumbnail" src="assets/images/projects/Proj1.jpg" alt="weather analysis dashboard" >
+
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                        </div>
+                                    </div>
+
+                                <div class="desc text-left">
+                                    <p>This project used Python, Pandas, OpenWeather API, JSON, matplotlib, HTML, CSS, and Bootstrap to analyze how weather varies based on proximity to the equator.</p>
+                                </div><!--//desc-->
+
+                            </div><!--//item-->
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="assets/images/projects/CityZip_Presentation-PDF.pdf" target="_blank">
+                                <img class="img-responsive project-image thumbnail" src="assets/images/projects/city-slip-small.jpg" alt="City Slip" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="assets/images/projects/CityZip_Presentation-PDF.pdf" target="_blank">City Slip</a></h3>
+                                    <p>This project used Python, Pandas, JSON, matplotlib, various APIs. I worked in a team of 3 to analyze a city to provide a subjective score for a user to determine whether to move there.</p>
+
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">
+                                <img class="img-responsive project-image thumbnail" src="assets/images/projects/mars-small.jpg" alt="Mission to Mars" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">Mission to Mars</a></h3>
+                                    <p>This project used Python, BeautifulSoup, MongoDB, HTML, CSS. I scraped various websites with images of Mars and data about Mars, and created a new website to display the images and data.</p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <hr class="divider" />
 
 
-      <div class="row">
-        <div class="col-md-12" "col-lg-12" padding=0>
-          <h1>Miriam Berkowitz</h1>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-7" "col-lg-8">
 
-          <img src="miriampic.jpg" width = 20% alt="picture of Miriam" class="responsive pull-left gap-right">
-          <div>
-            <p>
-            I am a data analytics developer with a Bachelor's Degree in Computer Science. I have experience working as a software engineer
-            for over 15 years. After taking some time to care for my children and work as a lay leader in the non-profit world,
-            I am returning to the workforce. Because I have always liked analysis and working with data and databases,
-            data analytics is my new pursuit. I am updating my programming and data skills in a six-month Data Analytics and
-            Visualization Bootcamp at George Washington University. I’d like to leverage my technical and leadership
-            experience while utilizing my data analytics skills to problem-solve, and ultimately attain a leadership
-            role in the data analytics industry.
-            </p>
-          </div>
-        </div>
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://miriambrk.github.io/drugtrial/index.html" target="_blank">
+                                <img class="img-responsive project-image thumbnail" src="assets/images/projects/pymaceutical.png" alt="Pymaceutical" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://miriambrk.github.io/drugtrial/index.html" target="_blank">Pymaceutical - Hypothetical Drug Trial</a></h3>
+                                    <p> This project analyzed a hypothetical drug trial using Python, Pandas, matplotlib and Seaborn. </p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
 
-        <div class="col-md-5" "col-lg-4">
+                            <hr class="divider" />
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="#" target="_blank">
+                                <img class="img-responsive project-image thumbnail" src="assets/images/projects/spaceship.jpg" alt="E.T. and the Aliens" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="#" target="_blank">E.T. and the Aliens</a></h3>
+                                    <p> COMING SOON. This project used JavaScript and DOM Manipulation to display hypothetical alien sightings from a very large file. Users can search the data using various criteria.</p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
 
-          <div>
-            <h2>Contact Info</h2>
-            <ul>
-              <li><strong>Email: <a href="mailto: miriambrk@gmail.com">miriambrk@gmail.com</a></li>
-              <li><strong>LinkedIn: <a href="https://www.linkedin.com/in/MiriamBerkowitz" target="_blank">in/MiriamBerkowitz</a></li>
-              <li><strong>Github: <a href="https://github.com/miriambrk" target="_blank">github.com/miriambrk</a></li>
-              <li><strong>Portfolio: <a href="#"></a>coming soon</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+                            <hr class="divider" />
 
-    <br>
-    <br>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
 
-    <div class="row">
-      <hr id="hr">
-    </div>
 
-    <div class="row">
-      <div class="col-md-12" "col-lg-12">
-        <h6>© Copyright Miriam Berkowitz 2017</h6>
-      </div>
-    </div>
 
-  </div>
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Vienna, VA, US</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only"></span><a href="mailto: miriambrk@gmail.com">miriambrk@gmail.com</a></li>
+                                <li><i class="fa fa-certificate"></i><span class="sr-only"></span><a href="assets/images/projects/MiriamBerkowitz-Resume-Dec2017-exp.pdf" target="_blank">Resum&eacute;</a></li>
 
-  </main>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fa fa-quote-left"></i>I worked with Miriam for several years.
+                                     Miriam's primary role was as a database engineer. She possesses the capability to understand the business while also implementing
+                                      solutions using her extremely strong technical skills. She helped solve several serious performance issues that
+                                      existed in Production when our application went live (in code written by others).
+                                      The entire team could always rely on her. <br>
+                                       <i class="fa fa-quote-right"></i></p>
+                                </blockquote>
+                                <p class="source"><span class="name">Jackie Ernst</span><br /><span class="title">Business/Systems Analyst</span></p>
+                            </div><!--//item-->
+
+                            <p><a class="more-link" href="https://www.linkedin.com/in/MiriamBerkowitz" target="_blank"><i class="fa fa-external-link"></i> More on Linkedin</a></p>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Certificate, Data Analytics & Visualization</h3>
+                                <h4 class="university">George Washington University <span class="year">(2017-2018)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BA, Computer Science</h3>
+                                <h4 class="university">Rutgers University </h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="memberships aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Memberships</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-group"></i><span class="sr-only"></span><a href="https://www.womenwhocode.com/dc" target="_blank">  Women Who Code DC</a></h3>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-users"></i><span class="sr-only"></span><a href="https://www.hiretechladies.com" target="_blank">  Tech Ladies</a></h3>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Technical Skills</h2>
+                        <div class="content">
+
+                            <div class="skillset">
+                              <ul>
+                                <li><strong>Languages:</strong> Python, including Pandas, C </li>
+                                <li><strong>Databases:</strong> SQL, MySQL, SQLAlchemy, MongoDB </li>
+                                <li><strong>Visualization:</strong> matplotlib, Seaborn, D3, Tableau </li>
+                                <li><strong>Interfaces:</strong> APIs, JSON, Beautiful Soup</li>
+                                <li><strong>Web:</strong> HTML/CSS, Bootstrap, JavaScript</li>
+                                <li><strong>Spreadsheets:</strong> Excel, VBA</li>
+                                <li><strong>Big Data:</strong> Hadoop, Pig, Hive, Sqoop</li>
+                                <li><strong>Geomapping:</strong> CartoDB, Leaflet.js</li>
+                                <li><strong>Version Control:</strong> Git, GitHub</li>
+                              </ul>
+
+                            </div>
+                        </div><!--//content-->
+                      </div><!--//section-inner-->
+                  </aside><!--//section-->
+
+
+
+
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+
+            <h4>Copyright &copy; 2017-2018  Miriam Berkowitz</h4>
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">(Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers)</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
